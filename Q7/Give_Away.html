@@ -35,13 +35,13 @@
         <fieldset id="givePetFieldset">
             <legend>Info</legend>
             <label class="prompt" for="petName">Name of Animal?</label>
-            <input type="text" id="petName" name="petName">
+            <input type="text" id="petName" name="petName" required>
             <br><br>
 
             <label class="prompt">Dog or Cat?</label>
-            <input type="radio" id="dog" name="type" value="Dog">
+            <input type="radio" id="dog" name="type" value="Dog" required>
             <label class="nonPrompt" for="dog">Dog</label>
-            <input type="radio" id="cat" name="type" value="Cat">
+            <input type="radio" id="cat" name="type" value="Cat" required>
             <label class="nonPrompt" for="cat">Cat</label>
             <br><br>
 
@@ -50,7 +50,7 @@
             <br><br>
 
             <label for="ageCategory" class="prompt">Age?</label>
-            <select id="ageCategory" name="age">
+            <select id="ageCategory" name="age" required>
                 <option value="Less than 2 months">Less than 2 months</option>
                 <option value="2 to 6 months">2 to 6 months</option>
                 <option value="6 months to 1 year">6 months to 1 year</option>
@@ -68,30 +68,30 @@
             <label class="nonPrompt" for="getAlong2">Other Cats</label>
             <input type="checkbox" id="getAlong3" name="getAlong3" value="Small Children">
             <label class="nonPrompt" for="getAlong3">Small Children</label>
+            <input type="checkbox" id="getAlong4" name="GetAlong4" value="Doesn't matter">
+            <label class="nonPrompt" for="getAlong4">Doesn't matter</label>
             <br><br>
 
             <label class="prompt" for="comments">Describe your dog to potential adopters:</label><br>
-            <textarea id="comments" name="comments" rows="10" cols="75"></textarea>
+            <textarea id="comments" name="comments" rows="10" cols="75" required></textarea>
             <br><br>
 
             <label class="prompt" for="firstName">Your first name?</label>
-            <input type="text" id="firstName" name="firstName">
+            <input type="text" id="firstName" name="firstName" required>
             <br><br>
 
             <label class="prompt" for="lastName">Your last name?</label>
-            <input type="text" id="lastName" name="lastName">
+            <input type="text" id="lastName" name="lastName" required>
             <br><br>
 
             <label class="prompt" for="email">Your email address?</label>
-            <input type="email" id="email" name="email">
+            <input type="email" id="email" name="email" required>
         </fieldset>
         <input type="submit">
         <input type="reset">
-
     </form>
-
+    <script src="JS/GivePetForm-JS.js"></script>
 </div>
-
 <div id="footer" class="footer">
     <h3><a href="Privacy_Disclaimer_Statement.html">Privacy/Disclaimer Statement</a></h3>
 </div>
