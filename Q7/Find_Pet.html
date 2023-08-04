@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/WebsiteStyleSheet.css">
+    <title>Adopt-a-Pet</title>
+</head>
+<body>
+<div id="header" class="header">
+
+    <h3><a href="Home.html">Adopt-a-Pet
+        <!-- image taken from https://www.iconspng.com/image/141305/dog-paw-print under Creative Commons license -->
+        <img class="logo" src="imgs/Dog_Paw_Print.png" alt="Cartoon Dog's Paw">
+        <!-- image taken from https://www.pngegg.com/en/png-ztvja/download under Creative Commons license -->
+        <img class="logo" src="imgs/Cat_Paw_print.png" alt="Cartoon Cat's Paw">
+    </a>
+    </h3>
+    <p id="timeDisplay"></p>
+    <script src="JS/Header-JS.js"></script>
+</div>
+
+<div id="sideNav" class="sideNav">
+    <a href=Home.html>Home</a>
+    <a href=Browse_Available_Pets.html>Browse Available Pets</a>
+    <a href="Find_Pet.html">Find a Dog/Cat</a>
+    <a href="Dog_Care.html">Dog Care</a>
+    <a href="Cat_Care.html">Cat Care</a>
+    <a href="Give_Away.html">Have a Pet to Give Away</a>
+    <a href="Contact_Us.html">Contact Us</a>
+</div>
+
+<div id="findPetContent" class="content">
+  <form id="findPetForm" name="FindPetForm">
+      <fieldset id="findPetFieldset">
+          <legend>Info</legend>
+          <label class="prompt">Dog or Cat?</label>
+          <input type="radio" id="dog" name="type" value="Dog">
+          <label class="nonPrompt" for="dog">Dog</label>
+          <input type="radio" id="cat" name="type" value="Cat">
+          <label class="nonPrompt" for="cat">Cat</label>
+          <br><br>
+
+          <label for="breed" class="prompt">Breed? (leave blank if no preference)</label>
+          <input type="text" id="breed" name="Breed" placeholder="Doesn't Matter">
+          <br><br>
+
+          <label for="ageCategory" class="prompt">Preferred age?</label>
+          <select id="ageCategory" name="age" required>
+              <option value="Doesn't Matter">Doesn't Matter</option>
+              <option value="Less than 2 months">Less than 2 months</option>
+              <option value="2 to 6 months">2 to 6 months</option>
+              <option value="6 months to 1 year">6 months to 1 year</option>
+              <option value="1 to 2 years">1 to 2 years</option>
+              <option value="2 to 5 years">2 to 5 years</option>
+              <option value="5 to 10 years">5 to 10 years</option>
+              <option value="10+ years">10+ years</option>
+          </select>
+          <br><br>
+
+          <label class="prompt">Gender?</label>
+          <input type="radio" id="female" name="gender" value="Female" required>
+          <label class="nonPrompt" for="female">Female</label>
+          <input type="radio" id="male" name="gender" value="Male" required>
+          <label class="nonPrompt" for="male">Male</label>
+          <input type="radio" id="noMatter" name="gender" value="Doesn't Matter" required>
+          <label class="nonPrompt" for="noMatter">Doesn't Matter</label>
+          <br><br>
+
+          <label class="prompt">Needs to get along with?</label>
+          <input type="checkbox" id="getAlong1" name="GetAlong1" value="Other Dogs">
+          <label class="nonPrompt" for="getAlong1">Other Dogs</label>
+          <input type="checkbox" id="getAlong2" name="GetAlong2" value="Other Cats">
+          <label class="nonPrompt" for="getAlong2">Other Cats</label>
+          <input type="checkbox" id="getAlong3" name="GetAlong3" value="Small Children">
+          <label class="nonPrompt" for="getAlong3">Small Children</label>
+          <input type="checkbox" id="getAlong4" name="GetAlong4" value="Doesn't matter">
+          <label class="nonPrompt" for="getAlong4">Doesn't matter</label>
+      </fieldset>
+      <input type="submit">
+      <input type="reset">
+  </form>
+    <script src="JS/FindPetForm-JS.js"></script>
+
+</div>
+
+<div id="footer" class="footer">
+    <h3><a href="Privacy_Disclaimer_Statement.html">Privacy/Disclaimer Statement</a></h3>
+</div>
+</body>
+</html>

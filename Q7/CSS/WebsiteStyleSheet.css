@@ -1,0 +1,153 @@
+* {box-sizing: border-box;}
+img.logo {width: 3vw;}
+.welcomeMessage {text-align: center}
+body
+{
+    font-family: Arial,serif;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: min-content;
+    gap: 0;
+    margin: 0;
+    z-index: 5;
+    background: rgb(70,70,80);
+    height: 97vh;
+}
+.header
+{
+    grid-column: 1 / 9;
+    grid-row:1;
+    text-align: center;
+    background: ghostwhite;
+    color: grey;
+    font-size: 2.3vw;
+}
+
+.header a
+{
+    text-decoration: none;
+    color: #818181;
+    display: block;
+    font-family: "Comic Sans MS",serif;
+}
+.sideNav
+{
+    padding-top: 5vw;
+    padding-left: 1vw;
+    padding-bottom: 10vw;
+    grid-column: 8;
+    grid-row: 2 / 8;
+    font-size: 1.2vw;
+    z-index: 1;
+    background-color: rgb(50,50,60);
+    overflow: hidden;
+}
+.sideNav a
+{
+    padding-bottom: 1.2vw;
+    text-decoration: none;
+    font-size: 1vw;
+    color: rgb(125,125,150);
+    display: block;
+}
+.sideNav a:hover {color: rgb(180,180,220);}
+.content
+{
+    font-size: 1vw;
+    padding: 1.5vw;
+    grid-column: 1/8;
+    grid-row: 2/8;
+    background: rgb(240,240,245);
+    line-height: 1.5;
+}
+.content a
+{
+    text-decoration: none;
+    color: rgb(80,80,120);
+    font-size: 1.01vw;
+}
+.content a:hover {color: darkolivegreen;}
+.footer
+{
+    font-size: 1.2vw;
+    grid-column:1 / 9;
+    grid-row: 8;
+    background: rgb(70,70,80);
+    padding: 1vw;
+}
+.footer a
+{
+    padding-bottom: 2vw;
+    text-decoration: none;
+    font-size: 1.2vw;
+    color: rgb(150,150,170);
+    display: block;
+}
+.footer a:hover {color: rgb(180,180,220);}
+fieldset#findPetFieldset, fieldset#givePetFieldset {border: double;}
+fieldset#findPetFieldset legend, fieldset#givePetFieldset legend
+{
+    font-size: 1.3vw;
+    font-weight: bold;
+    color: rgb(80,85,120);
+}
+label.prompt
+{
+    font-weight:bold;
+    color: rgb(60,60,60);
+    font-size: 1.2vw;
+}
+label.nonPrompt {font-size:1vw;}
+form#findPetForm, form#givePetForm {max-width: 55vw;}
+#timeDisplay {font-size: 1.2vw;}
+img.availablePetsImages
+{
+    width: 40vw;
+    border-radius: 12px;
+    grid-column: 1;
+    float: left;
+    margin: 0 2vw 0 0;
+}
+#dog1MalteseImage {grid-row:2;}
+#dog2DachshundImage{grid-row:3;}
+#dog3PomeranianImage{grid-row:4;}
+#cat1MaineCoonImage{grid-row:5;}
+#cat2SiberianImage{grid-row: 6;}
+.availablePetsParagraphs
+{
+    grid-column: 2;
+    align-content: center;
+    justify-content: center;
+}
+#dog1MalteseParagraph
+{
+    grid-row:2;
+    padding-bottom: 12vw;
+}
+#dog2DachshundParagraph
+{
+    grid-row:3;
+    padding-bottom: 12vw;
+}
+#dog3PomeranianParagraph
+{
+    grid-row:4;
+    padding-bottom: 12vw;
+}
+#cat1MaineCoonParagraph
+{
+    grid-row:5;
+    padding-bottom: 38vw;
+}
+#cat2SiberianParagraph
+{
+    grid-row:6;
+    padding-bottom: 38vw;
+}
+.availablePetsButtons
+{
+    max-width: 10vw;
+    font-size: 1.2vw;
+}
+
+
